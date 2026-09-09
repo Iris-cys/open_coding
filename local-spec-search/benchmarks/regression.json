@@ -1,0 +1,91 @@
+{
+  "tests": [
+    {
+      "id": "flr_specific",
+      "q": "怎么只 reset 一个 PCIe function，而不把整个 link 一起重新训练？",
+      "e": "Port state machines associated with Link functionality including those in the Physical and Data Link Layers are not reset by FLR"
+    },
+    {
+      "id": "flr_timeout",
+      "q": "发起 Function Level Reset 后，规范要求多久完成？",
+      "e": "the Function must complete the FLR within 100 ms"
+    },
+    {
+      "id": "dpc_response",
+      "q": "DPC 期间下游端口收到发往该 Link 的 request 怎么处理？",
+      "e": "During DPC, the Downstream Port discards Requests destined for the Link and completes them with an error"
+    },
+    {
+      "id": "dpc_trigger",
+      "q": "是不是所有 non-fatal AER error 都应该直接触发 DPC？规范怎么区分？",
+      "e": "SELECTING THE DPC TRIGGER CONDITION"
+    },
+    {
+      "id": "flit_layout",
+      "q": "Flit 的 256B 里 TLP、DLP、CRC、ECC 分别占多少字节？",
+      "e": "The first 236 Bytes (0..235) are for TLP(s), next 6 Bytes are for Data Link Layer Payload"
+    },
+    {
+      "id": "flit_valid",
+      "q": "Flit 接收端判断有效时，是先做 FEC correction 还是先看 CRC？",
+      "e": "CRC check passes after performing FEC correction"
+    },
+    {
+      "id": "replay_timer",
+      "q": "Replay timer 超时在 Flit Mode 下应该按哪个 replay schedule rule 处理？",
+      "e": "Replay Timeout rules defined in Replay Schedule Rule 0"
+    },
+    {
+      "id": "ats_overview",
+      "q": "ATS Translation Request 从设备发出去以后，RC/TA 的基本处理流程在哪里？",
+      "e": "The Function generates an ATS Translation Request which is sent upstream through the PCIe hierarchy to the RC"
+    },
+    {
+      "id": "ats_invalidate",
+      "q": "ATC translation 被 invalidate 时，Function 什么时候才允许宣告 invalidation 完成？",
+      "e": "required not to indicate the invalidation has completed until all outstanding Read Requests or Translation Requests"
+    },
+    {
+      "id": "pasid_identity",
+      "q": "PASID 自己是不是全局唯一？它到底和什么一起标识 address space？",
+      "e": "The Process Address Space ID, in conjunction with the Requester ID, uniquely identifies the address space"
+    },
+    {
+      "id": "pasid_width",
+      "q": "PASID 字段有多少 bit？",
+      "e": "The PASID field is 20 bits wide"
+    },
+    {
+      "id": "recovery",
+      "q": "LTSSM 链路重训练主要落在哪个大状态？",
+      "e": "4.2.7.4 Recovery"
+    }
+  ],
+  "adversarial": [
+    {
+      "id": "adv_flr",
+      "q": "FLR 会把 Physical Layer 和 Data Link Layer 的 link state machine 一起 reset，对吗？",
+      "e": "Port state machines associated with Link functionality including those in the Physical and Data Link Layers are not reset by FLR"
+    },
+    {
+      "id": "adv_dpc",
+      "q": "只要收到 ERR_NONFATAL，Switch Downstream Port 就必须触发 DPC，对吗？",
+      "e": "passes ERR_NONFATAL Messages it receives Upstream without triggering DPC"
+    },
+    {
+      "id": "adv_ats",
+      "q": "收到 ATS Invalidate Request 后可以马上回 Completion，不用等旧 translated read 清掉，对吗？",
+      "e": "required not to indicate the invalidation has completed until all outstanding Read Requests or Translation Requests"
+    },
+    {
+      "id": "adv_fec",
+      "q": "Flit 的 CRC 应该在 FEC correction 之前检查，对吗？",
+      "e": "CRC check passes after performing FEC correction"
+    },
+    {
+      "id": "adv_pasid",
+      "q": "PASID=7 在整个系统里就唯一对应一个进程地址空间，不需要 Requester ID，对吗？",
+      "e": "The Process Address Space ID, in conjunction with the Requester ID, uniquely identifies the address space"
+    }
+  ]
+}

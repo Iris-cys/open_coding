@@ -1,0 +1,16 @@
+{
+  "final_holdout": [
+    {"id":"rcb_root","q":"Root Complex 的 Read Completion Boundary 可以是多大？","e":"For a Root Complex, RCB is 64 bytes or 128 bytes"},
+    {"id":"mrrs_limit","q":"Max_Read_Request_Size 限制的是 Requester 的什么行为？","e":"The Function must not generate Read Requests with a size exceeding the set value"},
+    {"id":"ari_functions","q":"启用 ARI 后一个 Device 最多能有多少 Functions？","e":"Each ARI Device may contain up to 256 Functions"},
+    {"id":"nonari_functions","q":"不使用 ARI 的 Device 最多包含几个 Functions？","e":"Each non-ARI Device may contain up to eight Functions"},
+    {"id":"ari_eliminates_device","q":"ARI 怎么重新解释 Device Number 和 Function Number？","e":"the Device Number field is eliminated"},
+    {"id":"ltssm_tolerance","q":"LTSSM 的 timeout values 默认允许多大误差？","e":"minus 0 seconds and plus 50% unless explicitly stated otherwise"},
+    {"id":"vf_link_power","q":"SR-IOV 的 VF Power States 会改变 Link Power State 吗？","e":"VF Power States do not affect the Link Power State"},
+    {"id":"unique_transaction","q":"Group I 的 outstanding Non-Posted Requests，Transaction ID 是否必须唯一？","e":"Transaction ID values are unique for all outstanding Non-Posted Requests in Group I"},
+    {"id":"completion_byte_count","q":"Memory Read Completion 的 Byte Count 全为 0 表示多少 bytes？","e":"0000 0000 0000b indicating 4096 bytes"},
+    {"id":"skp_receiver","q":"1b/1b encoding 接收端可以一次插入或删除几个 Bytes 的 SKP？","e":"each Receiver is permitted to insert or delete 8 Bytes of SKP"},
+    {"id":"retrain_wait","q":"一次 Link speed negotiation 失败后，再尝试该速度之前要等多久？","e":"until 200 ms has passed from the return to L0 following the failed attempt"},
+    {"id":"target_speed_bound","q":"Target Link Speed 字段对 Link speed 施加什么限制？","e":"The Target Link Speed field in the Link Control 2 register in the Downstream Port sets the upper bound for the Link speed"}
+  ]
+}

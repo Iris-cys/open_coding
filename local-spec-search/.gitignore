@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.spec-search-runtime/
+.clean-*/
+dist/
+build/
+.spec-search/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.pdf

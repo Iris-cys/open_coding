@@ -1,0 +1,1 @@
+For installation requests, follow `INSTALL.md`. Keep PDFs and `.spec-search` indexes local and untracked. Run `spec-search doctor` before declaring setup complete. For retrieval changes, preserve the evidence-first behavior and validation rules in `CONTRIBUTING.md`.

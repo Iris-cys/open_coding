@@ -1,0 +1,5 @@
+# Compatibility install path. The authoritative dependency ranges live in pyproject.toml.
+PyMuPDF>=1.26.6,<1.27
+scikit-learn>=1.8.0,<1.9
+numpy>=2.3.5,<3
+scipy>=1.17.0,<2

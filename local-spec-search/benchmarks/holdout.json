@@ -1,0 +1,31 @@
+{
+  "unseen_topics": [
+    {"id":"ecrc_width","q":"端到端校验 ECRC 是多少位？","e":"a Transaction Layer end-to-end 32-bit CRC (ECRC) can be applied to a TLP"},
+    {"id":"ecrc_switch","q":"Switch 转发 TLP 时 ECRC 检查是必须的吗？","e":"Such a Switch can optionally check ECRC on TLPs that it forwards"},
+    {"id":"poison_retry","q":"Data Poisoning 会直接引起 Data Link Layer Retry 吗？","e":"Error forwarding does not cause Data Link Layer Retry"},
+    {"id":"poison_payload","q":"没有 data payload 的 TLP 可以被毒化吗？","e":"Transmitters are only permitted to poison TLPs that include a data payload"},
+    {"id":"poison_ep","q":"Transaction Layer 通过哪个 EP bit 表示 data poisoning？","e":"Poisoning of a TLP with a data payload in the Transaction Layer is indicated by a Set EP bit"},
+    {"id":"vc_count","q":"一个 Port 支持多少个 Virtual Channels？","e":"PCI Express Ports can support 1 to 8 Virtual Channels"},
+    {"id":"vc_tc0","q":"TC0 到 VC0 的映射能改吗？","e":"The mapping of TC0 to VC0 is fixed"},
+    {"id":"vc_tlp","q":"TLP 自己是否携带 VC ID？","e":"while DLLPs contain VC ID information for Flow Control accounting, TLPs do not"},
+    {"id":"vc_independent","q":"虚拟通道的 Flow Control 是否相互独立？","e":"fully independent Flow Control between different VCs"},
+    {"id":"atomic_original","q":"原子操作 AtomicOp 返回 original value 还是更新后的值？","e":"potentially writes a new value back to the location, and returns the original value"},
+    {"id":"atomic_posted","q":"AtomicOps 属于 Posted 还是 Non-Posted？","e":"AtomicOps are Non-Posted Memory Transactions"},
+    {"id":"atomic_encoding","q":"FetchAdd、Swap、CAS 是否使用同一个 type code？","e":"FetchAdd, Swap, and CAS each use a distinct type code"},
+    {"id":"atomic_size","q":"Completer 如何从 AtomicOp Request 得到 operand size？","e":"The Completer infers the operand size from the Length field value and type code"},
+    {"id":"atomic_endian","q":"AtomicOp Completer 的 endian format 是否固定？","e":"The endian format used by AtomicOp Completers to read and write data at the target location is implementation specific"},
+    {"id":"rebar_optional","q":"Resizable BAR 是 mandatory 还是 optional capability？","e":"The Resizable BAR Extended Capability is an optional capability"},
+    {"id":"rebar_range","q":"Resizable BAR hardware 必须支持的 resource size 范围是什么？","e":"Hardware must support at least one size in the range from 1 MB to 512 GB"},
+    {"id":"ordering_tc","q":"不同 TC labels 的 transactions 之间需要 ordering 吗？","e":"There is no ordering requirement among transactions with different TC labels"},
+    {"id":"reserved_completion","q":"收到 Reserved Completion Status value 时当成什么错误处理？","e":"Completions with a Reserved Completion Status value are treated as if the Completion Status was Unsupported Request (UR)"},
+    {"id":"error_completion_data","q":"Read 的 Completion Status 不是 Successful Completion 时还带数据吗？","e":"The Cpl (or CplLk) encoding is used instead of CplD (CplDLk)"},
+    {"id":"poison_corrupt_part","q":"规范定义如何确定 Poisoned TLP 的哪部分 data payload 实际损坏了吗？","e":"This document does not define any mechanism for determining which part or parts of the data payload of a Poisoned TLP are actually corrupt"}
+  ],
+  "negative_queries": [
+    {"id":"unknown_token","q":"ZXQNeverDefinedProtocol987 timing rules"},
+    {"id":"unrelated_cn","q":"明天上海会不会下雨？"},
+    {"id":"missing_company","q":"IrisSecretGPU99 FLR implementation clock frequency"},
+    {"id":"unrelated_english","q":"What is the recommended banana cake oven temperature?"},
+    {"id":"missing_price","q":"What is the retail price of an RTX99999 PCIe card?"}
+  ]
+}

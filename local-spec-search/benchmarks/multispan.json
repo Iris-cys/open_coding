@@ -1,0 +1,9 @@
+{
+  "multispan": [
+    {"id":"flr_scope_timing","q":"FLR 的 Function 范围、Link state 和完成时间分别是什么？","required":["Only the targeted Function is affected by the FLR operation","Port state machines associated with Link functionality including those in the Physical and Data Link Layers are not reset by FLR","the Function must complete the FLR within 100 ms"]},
+    {"id":"poison_conditions","q":"Data Poisoning 的 EP bit、data payload 限制以及 Data Link Layer Retry 的规则是什么？","required":["Error forwarding does not cause Data Link Layer Retry","Poisoning of a TLP with a data payload in the Transaction Layer is indicated by a Set EP bit","Transmitters are only permitted to poison TLPs that include a data payload"]},
+    {"id":"atomic_protocol","q":"AtomicOps 的 Posted 分类、type code 和 operand size 怎么规定？","required":["AtomicOps are Non-Posted Memory Transactions","FetchAdd, Swap, and CAS each use a distinct type code","The Completer infers the operand size from the Length field value and type code"]},
+    {"id":"vc_id_rules","q":"Virtual Channels 的支持数量、VC ID、TC0 到 VC0 的映射有什么规定？","required":["PCI Express Ports can support 1 to 8 Virtual Channels","The mapping of TC0 to VC0 is fixed","The same VC ID cannot be assigned to different VC hardware resources within the same Port"]},
+    {"id":"ari_fields_count","q":"ARI 的 Device Number、Function Number 和 Functions 数量有什么变化？","required":["the Device Number field is eliminated","an 8-bit Bus Number and an 8-bit Function Number","support up to 256 Functions [0..255] instead of 8 Functions [0..7]"]}
+  ]
+}
