@@ -2,7 +2,7 @@
 
 Offline, evidence-first search for a long technical PDF, exposed to VS Code agents through MCP. It returns the source file, PDF page number, bookmark section, exact excerpt, and neighboring page text; the AI remains responsible for reading the evidence and writing the answer.
 
-No Docker, server process, API key, or cloud vector database is required. Indexing and retrieval stay on the local machine.
+No Docker, separately managed background service, API key, or cloud vector database is required. VS Code starts the local MCP process as needed. Indexing and retrieval stay on the local machine.
 
 ## Install with one request
 

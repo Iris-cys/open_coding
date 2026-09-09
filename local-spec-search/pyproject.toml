@@ -35,9 +35,9 @@ spec-search = "spec_search.cli:main"
 spec-search-mcp = "spec_search.mcp_server:main"
 
 [project.urls]
-Homepage = "https://github.com/Iris-cys/local-spec-search"
-Repository = "https://github.com/Iris-cys/local-spec-search"
-Issues = "https://github.com/Iris-cys/local-spec-search/issues"
+Homepage = "https://github.com/Iris-cys/open_coding"
+Repository = "https://github.com/Iris-cys/open_coding"
+Issues = "https://github.com/Iris-cys/open_coding/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

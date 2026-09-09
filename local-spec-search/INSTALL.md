@@ -1,10 +1,12 @@
 # Install for VS Code
 
+Requires Python 3.11+ and Git. The package is in `local-spec-search/` inside this repository.
+
 ## Give this to a coding agent
 
 Replace `<PDF_PATH>` with the local path to a text-layer PDF, then paste this prompt into a VS Code coding agent:
 
-> Install Local Spec Search from https://github.com/Iris-cys/local-spec-search in an isolated Python environment. Follow INSTALL.md. Index `<PDF_PATH>` for this workspace, run `spec-search doctor`, and show me the result. Do not upload the PDF or index anywhere.
+> Install Local Spec Search from https://github.com/Iris-cys/open_coding in an isolated Python environment. Follow INSTALL.md. Index `<PDF_PATH>` for this workspace, run `spec-search doctor`, and show me the result. Do not upload the PDF or index anywhere.
 
 The agent should perform the following equivalent steps.
 
@@ -13,7 +15,7 @@ The agent should perform the following equivalent steps.
 ```powershell
 py -m venv .spec-search-runtime
 .\.spec-search-runtime\Scripts\python.exe -m pip install --upgrade pip
-.\.spec-search-runtime\Scripts\python.exe -m pip install "git+https://github.com/Iris-cys/local-spec-search.git"
+.\.spec-search-runtime\Scripts\python.exe -m pip install "git+https://github.com/Iris-cys/open_coding.git#subdirectory=local-spec-search"
 .\.spec-search-runtime\Scripts\spec-search.exe init "C:\path\to\spec.pdf" --workspace .
 .\.spec-search-runtime\Scripts\spec-search.exe doctor --workspace .
 ```
@@ -23,7 +25,7 @@ py -m venv .spec-search-runtime
 ```bash
 python3 -m venv .spec-search-runtime
 .spec-search-runtime/bin/python -m pip install --upgrade pip
-.spec-search-runtime/bin/python -m pip install "git+https://github.com/Iris-cys/local-spec-search.git"
+.spec-search-runtime/bin/python -m pip install "git+https://github.com/Iris-cys/open_coding.git#subdirectory=local-spec-search"
 .spec-search-runtime/bin/spec-search init "/path/to/spec.pdf" --workspace .
 .spec-search-runtime/bin/spec-search doctor --workspace .
 ```
