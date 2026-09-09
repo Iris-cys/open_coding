@@ -1,6 +1,6 @@
 # Contributing
 
-Use Python 3.10 or newer. Install the development extras with `python -m pip install -e ".[dev]"`.
+Use Python 3.11 or newer. Install the development extras with `python -m pip install -e ".[dev]"`.
 
 A retrieval change is accepted only when it includes a reproducible test or benchmark showing what improved and what regressed. Do not tune against a holdout set and continue calling it blind evaluation. Do not hard-code answer page numbers. Preserve exact source page text and document fingerprints in evaluation outputs.
 
