@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ari_functions",
+    "strict_gold_pages": [
+      203
+    ],
+    "equivalent_evidence_page": 877,
+    "equivalent_evidence": "interpretation enables an ARI Device to support up to 256 Functions [0..255] instead of 8 Functions [0..7].",
+    "present_in_returned_top3_context": true,
+    "review_type": "post hoc manual evidence review; not a blinded score"
+  },
+  {
+    "id": "nonari_functions",
+    "strict_gold_pages": [
+      203
+    ],
+    "equivalent_evidence_page": 877,
+    "equivalent_evidence": "interpretation enables an ARI Device to support up to 256 Functions [0..255] instead of 8 Functions [0..7].",
+    "present_in_returned_top3_context": true,
+    "review_type": "post hoc manual evidence review; not a blinded score"
+  }
+]

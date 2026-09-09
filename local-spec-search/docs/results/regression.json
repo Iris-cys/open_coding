@@ -1,0 +1,822 @@
+{
+  "source_sha256": "9ddc01168fb3d26dc63b5bb61182dd438e421a6b6659c3809d01a1d532932122",
+  "suite_sha256": "7647b3905ed9865d6643fe5d8592038c1751d95e7326799fd22798ce7f6ef54c",
+  "groups": {
+    "tests": {
+      "n": 12,
+      "rows": [
+        {
+          "id": "flr_specific",
+          "query": "怎么只 reset 一个 PCIe function，而不把整个 link 一起重新训练？",
+          "gold_pages": [
+            831
+          ],
+          "top_pages": [
+            831,
+            829,
+            1777,
+            720,
+            1659
+          ],
+          "context_pages": [
+            [
+              830,
+              831,
+              832
+            ],
+            [
+              828,
+              829,
+              830
+            ],
+            [
+              1776,
+              1777,
+              1778
+            ],
+            [
+              719,
+              720,
+              721
+            ],
+            [
+              1658,
+              1659,
+              1660
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 48.361158000034266
+        },
+        {
+          "id": "flr_timeout",
+          "query": "发起 Function Level Reset 后，规范要求多久完成？",
+          "gold_pages": [
+            831,
+            954
+          ],
+          "top_pages": [
+            831,
+            829,
+            1777,
+            1713,
+            954
+          ],
+          "context_pages": [
+            [
+              830,
+              831,
+              832
+            ],
+            [
+              828,
+              829,
+              830
+            ],
+            [
+              1776,
+              1777,
+              1778
+            ],
+            [
+              1712,
+              1713,
+              1714
+            ],
+            [
+              953,
+              954,
+              955
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 13.391803000104119
+        },
+        {
+          "id": "dpc_response",
+          "query": "DPC 期间下游端口收到发往该 Link 的 request 怎么处理？",
+          "gold_pages": [
+            804
+          ],
+          "top_pages": [
+            319,
+            803,
+            805,
+            810,
+            1418
+          ],
+          "context_pages": [
+            [
+              318,
+              319,
+              320
+            ],
+            [
+              802,
+              803,
+              804
+            ],
+            [
+              804,
+              805,
+              806
+            ],
+            [
+              809,
+              810,
+              811
+            ],
+            [
+              1417,
+              1418,
+              1419
+            ]
+          ],
+          "page_rank": null,
+          "evidence_rank": 2,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 38.113758999998026
+        },
+        {
+          "id": "dpc_trigger",
+          "query": "是不是所有 non-fatal AER error 都应该直接触发 DPC？规范怎么区分？",
+          "gold_pages": [
+            805
+          ],
+          "top_pages": [
+            805,
+            803,
+            810,
+            319,
+            808
+          ],
+          "context_pages": [
+            [
+              804,
+              805,
+              806
+            ],
+            [
+              802,
+              803,
+              804
+            ],
+            [
+              809,
+              810,
+              811
+            ],
+            [
+              318,
+              319,
+              320
+            ],
+            [
+              807,
+              808,
+              809
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 15.427116999944701
+        },
+        {
+          "id": "flit_layout",
+          "query": "Flit 的 256B 里 TLP、DLP、CRC、ECC 分别占多少字节？",
+          "gold_pages": [
+            407,
+            409,
+            410,
+            411
+          ],
+          "top_pages": [
+            415,
+            410,
+            464,
+            407,
+            412
+          ],
+          "context_pages": [
+            [
+              414,
+              415,
+              416
+            ],
+            [
+              409,
+              410,
+              411
+            ],
+            [
+              463,
+              464,
+              465
+            ],
+            [
+              406,
+              407,
+              408
+            ],
+            [
+              411,
+              412,
+              413
+            ]
+          ],
+          "page_rank": 2,
+          "evidence_rank": 2,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 14.264400000001842
+        },
+        {
+          "id": "flit_valid",
+          "query": "Flit 接收端判断有效时，是先做 FEC correction 还是先看 CRC？",
+          "gold_pages": [
+            415
+          ],
+          "top_pages": [
+            415,
+            1341,
+            458,
+            1970,
+            463
+          ],
+          "context_pages": [
+            [
+              414,
+              415,
+              416
+            ],
+            [
+              1340,
+              1341,
+              1342
+            ],
+            [
+              457,
+              458,
+              459
+            ],
+            [
+              1969,
+              1970,
+              1971
+            ],
+            [
+              462,
+              463,
+              464
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 12.655566999910661
+        },
+        {
+          "id": "replay_timer",
+          "query": "Replay timer 超时在 Flit Mode 下应该按哪个 replay schedule rule 处理？",
+          "gold_pages": [
+            353
+          ],
+          "top_pages": [
+            438,
+            424,
+            353,
+            427,
+            430
+          ],
+          "context_pages": [
+            [
+              437,
+              438,
+              439
+            ],
+            [
+              423,
+              424,
+              425
+            ],
+            [
+              352,
+              353,
+              354
+            ],
+            [
+              426,
+              427,
+              428
+            ],
+            [
+              429,
+              430,
+              431
+            ]
+          ],
+          "page_rank": 3,
+          "evidence_rank": 3,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 126.95988299992678
+        },
+        {
+          "id": "ats_overview",
+          "query": "ATS Translation Request 从设备发出去以后，RC/TA 的基本处理流程在哪里？",
+          "gold_pages": [
+            1687
+          ],
+          "top_pages": [
+            1687,
+            1689,
+            1685,
+            1780,
+            1697
+          ],
+          "context_pages": [
+            [
+              1686,
+              1687,
+              1688
+            ],
+            [
+              1688,
+              1689,
+              1690
+            ],
+            [
+              1684,
+              1685,
+              1686
+            ],
+            [
+              1779,
+              1780,
+              1781
+            ],
+            [
+              1696,
+              1697,
+              1698
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 15.319721999958347
+        },
+        {
+          "id": "ats_invalidate",
+          "query": "ATC translation 被 invalidate 时，Function 什么时候才允许宣告 invalidation 完成？",
+          "gold_pages": [
+            1690
+          ],
+          "top_pages": [
+            1717,
+            1715,
+            1689,
+            1703,
+            1711
+          ],
+          "context_pages": [
+            [
+              1716,
+              1717,
+              1718
+            ],
+            [
+              1714,
+              1715,
+              1716
+            ],
+            [
+              1688,
+              1689,
+              1690
+            ],
+            [
+              1702,
+              1703,
+              1704
+            ],
+            [
+              1710,
+              1711,
+              1712
+            ]
+          ],
+          "page_rank": null,
+          "evidence_rank": 3,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 12.71079599996483
+        },
+        {
+          "id": "pasid_identity",
+          "query": "PASID 自己是不是全局唯一？它到底和什么一起标识 address space？",
+          "gold_pages": [
+            125
+          ],
+          "top_pages": [
+            125,
+            905,
+            154,
+            1691,
+            903
+          ],
+          "context_pages": [
+            [
+              124,
+              125,
+              126
+            ],
+            [
+              904,
+              905,
+              906
+            ],
+            [
+              153,
+              154,
+              155
+            ],
+            [
+              1690,
+              1691,
+              1692
+            ],
+            [
+              902,
+              903,
+              904
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 12.69622699987849
+        },
+        {
+          "id": "pasid_width",
+          "query": "PASID 字段有多少 bit？",
+          "gold_pages": [
+            905,
+            1692
+          ],
+          "top_pages": [
+            905,
+            1691,
+            125,
+            154,
+            903
+          ],
+          "context_pages": [
+            [
+              904,
+              905,
+              906
+            ],
+            [
+              1690,
+              1691,
+              1692
+            ],
+            [
+              124,
+              125,
+              126
+            ],
+            [
+              153,
+              154,
+              155
+            ],
+            [
+              902,
+              903,
+              904
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 13.272470999936559
+        },
+        {
+          "id": "recovery",
+          "query": "LTSSM 链路重训练主要落在哪个大状态？",
+          "gold_pages": [
+            567
+          ],
+          "top_pages": [
+            567,
+            385,
+            517,
+            591,
+            714
+          ],
+          "context_pages": [
+            [
+              566,
+              567,
+              568
+            ],
+            [
+              384,
+              385,
+              386
+            ],
+            [
+              516,
+              517,
+              518
+            ],
+            [
+              590,
+              591,
+              592
+            ],
+            [
+              713,
+              714,
+              715
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 14.825976999873092
+        }
+      ],
+      "page_recall@1": 0.6666666666666666,
+      "page_recall@3": 0.8333333333333334,
+      "page_recall@5": 0.8333333333333334,
+      "returned_evidence@1": 0.6666666666666666,
+      "returned_evidence@3": 1.0,
+      "returned_evidence@5": 1.0
+    },
+    "adversarial": {
+      "n": 5,
+      "rows": [
+        {
+          "id": "adv_flr",
+          "query": "FLR 会把 Physical Layer 和 Data Link Layer 的 link state machine 一起 reset，对吗？",
+          "gold_pages": [
+            831
+          ],
+          "top_pages": [
+            323,
+            831,
+            829,
+            352,
+            148
+          ],
+          "context_pages": [
+            [
+              322,
+              323,
+              324
+            ],
+            [
+              830,
+              831,
+              832
+            ],
+            [
+              828,
+              829,
+              830
+            ],
+            [
+              351,
+              352,
+              353
+            ],
+            [
+              147,
+              148,
+              149
+            ]
+          ],
+          "page_rank": 2,
+          "evidence_rank": 2,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 22.285416999920926
+        },
+        {
+          "id": "adv_dpc",
+          "query": "只要收到 ERR_NONFATAL，Switch Downstream Port 就必须触发 DPC，对吗？",
+          "gold_pages": [
+            805
+          ],
+          "top_pages": [
+            805,
+            803,
+            319,
+            810,
+            1422
+          ],
+          "context_pages": [
+            [
+              804,
+              805,
+              806
+            ],
+            [
+              802,
+              803,
+              804
+            ],
+            [
+              318,
+              319,
+              320
+            ],
+            [
+              809,
+              810,
+              811
+            ],
+            [
+              1421,
+              1422,
+              1423
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 14.821204000099897
+        },
+        {
+          "id": "adv_ats",
+          "query": "收到 ATS Invalidate Request 后可以马上回 Completion，不用等旧 translated read 清掉，对吗？",
+          "gold_pages": [
+            1690
+          ],
+          "top_pages": [
+            1689,
+            1687,
+            1715,
+            1717,
+            1711
+          ],
+          "context_pages": [
+            [
+              1688,
+              1689,
+              1690
+            ],
+            [
+              1686,
+              1687,
+              1688
+            ],
+            [
+              1714,
+              1715,
+              1716
+            ],
+            [
+              1716,
+              1717,
+              1718
+            ],
+            [
+              1710,
+              1711,
+              1712
+            ]
+          ],
+          "page_rank": null,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 16.623924999976225
+        },
+        {
+          "id": "adv_fec",
+          "query": "Flit 的 CRC 应该在 FEC correction 之前检查，对吗？",
+          "gold_pages": [
+            415
+          ],
+          "top_pages": [
+            415,
+            1341,
+            458,
+            1970,
+            463
+          ],
+          "context_pages": [
+            [
+              414,
+              415,
+              416
+            ],
+            [
+              1340,
+              1341,
+              1342
+            ],
+            [
+              457,
+              458,
+              459
+            ],
+            [
+              1969,
+              1970,
+              1971
+            ],
+            [
+              462,
+              463,
+              464
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 11.758830999951897
+        },
+        {
+          "id": "adv_pasid",
+          "query": "PASID=7 在整个系统里就唯一对应一个进程地址空间，不需要 Requester ID，对吗？",
+          "gold_pages": [
+            125
+          ],
+          "top_pages": [
+            904,
+            125,
+            1691,
+            154,
+            906
+          ],
+          "context_pages": [
+            [
+              903,
+              904,
+              905
+            ],
+            [
+              124,
+              125,
+              126
+            ],
+            [
+              1690,
+              1691,
+              1692
+            ],
+            [
+              153,
+              154,
+              155
+            ],
+            [
+              905,
+              906,
+              907
+            ]
+          ],
+          "page_rank": 2,
+          "evidence_rank": 2,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 15.94005000015386
+        }
+      ],
+      "page_recall@1": 0.4,
+      "page_recall@3": 0.8,
+      "page_recall@5": 0.8,
+      "returned_evidence@1": 0.6,
+      "returned_evidence@3": 1.0,
+      "returned_evidence@5": 1.0
+    }
+  },
+  "latency": {
+    "n": 85,
+    "p50_ms": 14.36375000002954,
+    "p95_ms": 30.49983500000053,
+    "max_ms": 122.1154499999102,
+    "definition": "warm index; parsing/answer generation/UI excluded; nearest-rank p95"
+  }
+}

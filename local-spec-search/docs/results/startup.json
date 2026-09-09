@@ -1,0 +1,7 @@
+{
+  "import_and_index_load_s": 2.1905893520001882,
+  "first_query_ms": 67.43834299982154,
+  "total_to_first_result_s": 2.2580276950000098,
+  "unchanged_build_check_ms": 186.05302399987522,
+  "reused": true
+}

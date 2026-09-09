@@ -1,0 +1,7 @@
+{
+  "unchanged_source_reuses_index_without_rewrite": true,
+  "failed_rebuild_preserves_existing_database": true,
+  "returned_context_matches_indexed_source_exactly": true,
+  "mcp_initialize_list_search_read_validation_and_ping": true,
+  "query_metacharacters_do_not_execute_sql": true
+}

@@ -1,0 +1,300 @@
+{
+  "source_sha256": "9ddc01168fb3d26dc63b5bb61182dd438e421a6b6659c3809d01a1d532932122",
+  "suite_sha256": "047b118fb8c3297ed458bccfaaa513f18d7b3ab4a4bf864f664ef198470768b0",
+  "groups": {
+    "untuned_acceptance_sample": {
+      "n": 6,
+      "rows": [
+        {
+          "id": "cn_vc",
+          "query": "一个端口最多有多少虚拟通道？",
+          "gold_pages": [
+            284
+          ],
+          "top_pages": [
+            1357,
+            280,
+            284,
+            811,
+            1369
+          ],
+          "context_pages": [
+            [
+              1356,
+              1357,
+              1358
+            ],
+            [
+              279,
+              280,
+              281
+            ],
+            [
+              283,
+              284,
+              285
+            ],
+            [
+              810,
+              811,
+              812
+            ],
+            [
+              1368,
+              1369,
+              1370
+            ]
+          ],
+          "page_rank": 3,
+          "evidence_rank": 3,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 56.09349600013047
+        },
+        {
+          "id": "cn_flr",
+          "query": "只复位一个功能会把链路也复位吗？",
+          "gold_pages": [
+            829
+          ],
+          "top_pages": [
+            829,
+            831,
+            1777,
+            1659,
+            720
+          ],
+          "context_pages": [
+            [
+              828,
+              829,
+              830
+            ],
+            [
+              830,
+              831,
+              832
+            ],
+            [
+              1776,
+              1777,
+              1778
+            ],
+            [
+              1658,
+              1659,
+              1660
+            ],
+            [
+              719,
+              720,
+              721
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 15.701004999982615
+        },
+        {
+          "id": "mixed_crc",
+          "query": "Flit 的有效性判断中，FEC correction 和 CRC check 的顺序是怎样的？",
+          "gold_pages": [
+            415
+          ],
+          "top_pages": [
+            415,
+            463,
+            1341,
+            1970,
+            458
+          ],
+          "context_pages": [
+            [
+              414,
+              415,
+              416
+            ],
+            [
+              462,
+              463,
+              464
+            ],
+            [
+              1340,
+              1341,
+              1342
+            ],
+            [
+              1969,
+              1970,
+              1971
+            ],
+            [
+              457,
+              458,
+              459
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 15.04040999998324
+        },
+        {
+          "id": "mixed_vc_map",
+          "query": "VC ID 0 可以分配给非默认 VC 吗？",
+          "gold_pages": [
+            284
+          ],
+          "top_pages": [
+            284,
+            280,
+            1357,
+            815,
+            1367
+          ],
+          "context_pages": [
+            [
+              283,
+              284,
+              285
+            ],
+            [
+              279,
+              280,
+              281
+            ],
+            [
+              1356,
+              1357,
+              1358
+            ],
+            [
+              814,
+              815,
+              816
+            ],
+            [
+              1366,
+              1367,
+              1368
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 13.726625000117565
+        },
+        {
+          "id": "english_ecrc",
+          "query": "Where is ECRC generated, and who checks it at the end of the path?",
+          "gold_pages": [
+            309
+          ],
+          "top_pages": [
+            310,
+            312,
+            884,
+            314,
+            251
+          ],
+          "context_pages": [
+            [
+              309,
+              310,
+              311
+            ],
+            [
+              311,
+              312,
+              313
+            ],
+            [
+              883,
+              884,
+              885
+            ],
+            [
+              313,
+              314,
+              315
+            ],
+            [
+              250,
+              251,
+              252
+            ]
+          ],
+          "page_rank": null,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 12.814183000045887
+        },
+        {
+          "id": "english_poison",
+          "query": "Is a transmitter required to support data poisoning?",
+          "gold_pages": [
+            315
+          ],
+          "top_pages": [
+            315,
+            785,
+            309,
+            119,
+            153
+          ],
+          "context_pages": [
+            [
+              314,
+              315,
+              316
+            ],
+            [
+              784,
+              785,
+              786
+            ],
+            [
+              308,
+              309,
+              310
+            ],
+            [
+              118,
+              119,
+              120
+            ],
+            [
+              152,
+              153,
+              154
+            ]
+          ],
+          "page_rank": 1,
+          "evidence_rank": 1,
+          "status": "candidates",
+          "answer_status": "not_generated",
+          "ms": 14.215049999847906
+        }
+      ],
+      "page_recall@1": 0.6666666666666666,
+      "page_recall@3": 0.8333333333333334,
+      "page_recall@5": 0.8333333333333334,
+      "returned_evidence@1": 0.8333333333333334,
+      "returned_evidence@3": 1.0,
+      "returned_evidence@5": 1.0
+    }
+  },
+  "latency": {
+    "n": 30,
+    "p50_ms": 14.797935000046891,
+    "p95_ms": 22.70374499994432,
+    "max_ms": 26.377684999943085,
+    "definition": "warm index; parsing/answer generation/UI excluded; nearest-rank p95"
+  }
+}
